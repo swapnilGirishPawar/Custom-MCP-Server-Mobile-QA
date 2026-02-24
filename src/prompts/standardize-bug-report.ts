@@ -95,6 +95,7 @@ IMPORTANT RULES
 - Use strong QA language.
 - Avoid assumptions if information is missing.
 - If data is insufficient, intelligently infer realistic steps based on standard mobile app behavior.
+- In output [Issue], [Reproduction steps], [Screenshot], [Expected Result] should be in Bold headings, no italics, capitalized first letter.
 
 ---------------------------------
 
