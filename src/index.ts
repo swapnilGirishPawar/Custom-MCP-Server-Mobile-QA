@@ -2,11 +2,26 @@
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { registerConvertManualToAutomation } from "./prompts/convert-manual-to-automation.js";
-import { registerRefactorAutomationCode } from "./prompts/refactor-automation-code.js";
-import { registerXmlToPomLocators } from "./prompts/xml-to-pom-locators.js";
-import { registerAnalyzeTestFailure } from "./prompts/analyze-test-failure.js";
-import { registerStandardizeBugReport } from "./prompts/standardize-bug-report.js";
+import {
+  registerConvertManualToAutomation,
+  registerConvertManualToAutomationTool,
+} from "./prompts/convert-manual-to-automation.js";
+import {
+  registerRefactorAutomationCode,
+  registerRefactorAutomationCodeTool,
+} from "./prompts/refactor-automation-code.js";
+import {
+  registerXmlToPomLocators,
+  registerXmlToPomLocatorsTool,
+} from "./prompts/xml-to-pom-locators.js";
+import {
+  registerAnalyzeTestFailure,
+  registerAnalyzeTestFailureTool,
+} from "./prompts/analyze-test-failure.js";
+import {
+  registerStandardizeBugReport,
+  registerStandardizeBugReportTool,
+} from "./prompts/standardize-bug-report.js";
 
 const server = new McpServer({
   name: "qa-prompts-mcp-server",
@@ -18,6 +33,12 @@ registerRefactorAutomationCode(server);
 registerXmlToPomLocators(server);
 registerAnalyzeTestFailure(server);
 registerStandardizeBugReport(server);
+
+registerConvertManualToAutomationTool(server);
+registerRefactorAutomationCodeTool(server);
+registerXmlToPomLocatorsTool(server);
+registerAnalyzeTestFailureTool(server);
+registerStandardizeBugReportTool(server);
 
 async function main(): Promise<void> {
   const transport = new StdioServerTransport();
