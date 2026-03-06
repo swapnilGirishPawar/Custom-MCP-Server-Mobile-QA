@@ -149,7 +149,6 @@ Your task is to convert the given Bug Title (and optional context if provided) i
 ORGANIZATION BUG FORMAT (STRICT)
 ---------------------------------
 
-<Title>
 
 [Issue] -
 
@@ -166,29 +165,22 @@ ORGANIZATION BUG FORMAT (STRICT)
 INSTRUCTIONS
 ---------------------------------
 
-1. Improve and rewrite the Title to be:
-   - Clear
-   - Specific
-   - Reproducible
-   - Professional
-   - Without unnecessary words
-
-2. In [Issue]:
+1. In [Issue]:
    - Clearly describe what is happening
    - Mention actual behavior
    - Include environment if relevant (Build, Platform, Account type, etc.)
    - Keep it precise but complete
 
-3. In [Reproduction steps]:
+2. In [Reproduction steps]:
    - Write clean, numbered, reproducible steps
    - Avoid vague steps like "do something"
    - Make them executable by another tester
    - Minimum 3 logical steps if possible
 
-4. In [Screenshot]:
+3. In [Screenshot]:
    - If no screenshot context is given, Keep it empty.
 
-5. In [Expected Result]:
+4. In [Expected Result]:
    - Clearly describe correct behavior
    - Be specific
    - Avoid generic phrases like "should work properly"
