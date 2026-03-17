@@ -22,6 +22,10 @@ import {
   registerStandardizeBugReport,
   registerStandardizeBugReportTool,
 } from "./prompts/standardize-bug-report.js";
+import {
+  registerGenerateManualTestCases,
+  registerGenerateManualTestCasesTool,
+} from "./prompts/generate-manual-test-cases.js";
 
 const server = new McpServer({
   name: "qa-prompts-mcp-server",
@@ -33,12 +37,14 @@ registerRefactorAutomationCode(server);
 registerXmlToPomLocators(server);
 registerAnalyzeTestFailure(server);
 registerStandardizeBugReport(server);
+registerGenerateManualTestCases(server);
 
 registerConvertManualToAutomationTool(server);
 registerRefactorAutomationCodeTool(server);
 registerXmlToPomLocatorsTool(server);
 registerAnalyzeTestFailureTool(server);
 registerStandardizeBugReportTool(server);
+registerGenerateManualTestCasesTool(server);
 
 async function main(): Promise<void> {
   const transport = new StdioServerTransport();
