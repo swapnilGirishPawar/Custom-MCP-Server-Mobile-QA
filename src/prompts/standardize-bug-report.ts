@@ -89,13 +89,14 @@ INSTRUCTIONS
 IMPORTANT RULES
 ---------------------------------
 
+- In output [Issue], [Reproduction steps], [Screenshot], [Expected Result] should be in Bold headings, no italics, capitalized first letter.
+- In output Issue, Reproduction steps, Screenshot, Expected Result, should have square bracket as it is. follow organization's bug format strictly.
 - Do NOT add extra sections.
 - Do NOT add Actual Result section (unless explicitly provided).
 - Keep it concise and professional.
 - Use strong QA language.
 - Avoid assumptions if information is missing.
 - If data is insufficient, intelligently infer realistic steps based on standard mobile app behavior.
-- In output [Issue], [Reproduction steps], [Screenshot], [Expected Result] should be in Bold headings, no italics, capitalized first letter.
 
 ---------------------------------
 
@@ -189,13 +190,14 @@ INSTRUCTIONS
 IMPORTANT RULES
 ---------------------------------
 
+- In output [Issue], [Reproduction steps], [Screenshot], [Expected Result] should be in Bold headings, no italics, capitalized first letter.
+- In output Issue, Reproduction steps, Screenshot, Expected Result, should have square bracket as it is. follow organization's bug format strictly.
 - Do NOT add extra sections.
 - Do NOT add Actual Result section (unless explicitly provided).
 - Keep it concise and professional.
 - Use strong QA language.
 - Avoid assumptions if information is missing.
 - If data is insufficient, intelligently infer realistic steps based on standard mobile app behavior.
-- In output [Issue], [Reproduction steps], [Screenshot], [Expected Result] should be in Bold headings, no italics, capitalized first letter.
 
 ---------------------------------
 
